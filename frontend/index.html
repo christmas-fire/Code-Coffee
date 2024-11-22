@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <link href="page.css" rel="stylesheet">
+    <title>Coffee Store</title>
+</head>
+
+<body class="body">
+    <div class="head">
+        <p>rere</p>
+    </div>
+    <div class="header">
+        <h1 class="header_name">Coding coffee shop</h1>
+    </div>
+    <div class="content_box">
+        <p>dfsf</p>
+    </div>
+
+    <script>
+        let isSwiped = false;
+        const header = document.querySelector('.header');
+        const contentBox = document.querySelector('.content_box');
+
+        window.addEventListener('wheel', function (event) {
+            if (event.deltaY > 0 && !isSwiped) {
+                isSwiped = true;
+                header.style.transform = 'translateY(-1000px)';
+                contentBox.style.transform = 'translateY(-1000px)';
+            }
+        });
+
+        window.addEventListener('wheel', function (event) {
+            if (event.deltaY < 0 && isSwiped) {
+                isSwiped = false;
+                header.style.transform = 'translateY(0)';
+                contentBox.style.transform = 'translateY(0)';
+            }
+        });
+
+    </script>
+
+</body>
