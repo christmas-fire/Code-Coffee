@@ -66,17 +66,23 @@
     font-family: "Verdana";
     font-size: 20px;
     color: #ffffff;
-}
-
-/* .about_us_img {
-    display: inline-block;
-    object-fit: contain;
-    width: 40%;
-    height: auto;
     position: absolute;
     top: 100px;
     bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 0 0 1000px;
-}*/
+    left: -700px;
+    right: -300px;
+    transition: transform 1.5s ease;
+}
+
+.about_us_img {
+    display: inline-block;
+    object-fit: contain;
+    width: 600px;
+    position: absolute;
+    top: 130px;
+    bottom: 0;
+    left: 1500px;
+    right: -300px;
+    transition: transform 1.5s ease;
+    /* margin: 0 0 0 1000px; */
+}
